@@ -1,0 +1,1 @@
+registrationKey = a60052d890d8bcb1a3a9be904ae558e61b7a7757ad97c563966aaac76df53135;
