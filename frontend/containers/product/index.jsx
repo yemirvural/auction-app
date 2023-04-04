@@ -6,12 +6,12 @@ import ProductFlow from '@/components/product-flow'
 import ProductStats from '@/components/product-stats'
 import styles from './styles.module.css'
 
-function ProductContainer({ productInfo}) {
+function ProductContainer({ productInfo, remainingTime}) {
   return (
     <div className={styles.productWrapper}>
         <ProductSlider productInfo={productInfo}/>
-        <ProductFlow productInfo={productInfo}/>
-        <ProductStats productInfo={productInfo}/>
+        <ProductFlow productInfo={productInfo} remainingTime={remainingTime}/>
+        <ProductStats productInfo={productInfo} remainingTime={remainingTime}/>
     </div>
   )
 }

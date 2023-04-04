@@ -1,4 +1,26 @@
 .container{
     display: flex;
+    position: relative;
+    flex-direction: column;
     width: 33%;
+}
+.statsHeader{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 125px);
+}
+.statsBody{
+    display: flex;
+    position: absolute;
+    bottom: 0;    
+    width: 100%;
+    height: 125px;
+    border: 1px solid grey;
+}
+.timeRemain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 26px;
 }

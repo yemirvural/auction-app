@@ -30,6 +30,14 @@
     align-items: center;
     gap: 7px;
 }
+.flowBody form.closed button{
+    background-color: red;
+    pointer-events: none;
+}
+.flowBody form.closed input{
+pointer-events: none;
+}
+
 .flowMessage{
     display: flex;
     align-items: center;
@@ -54,7 +62,7 @@
 .flowBody button{
     display: flex;
     padding: 4px 20px;
-    background-color:slategray;
+    background-color:green;
     border: 1px solid black;
     border-radius: 15px;
     color: #fff;

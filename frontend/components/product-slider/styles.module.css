@@ -40,12 +40,11 @@
     width: 100%;
     bottom: 0;
     gap: 8px;
-    width: max-content;
     padding: 3px 12px;
     font-size: 15px;
     font-weight: 700;
 }
-.profile span{
+.profile .publisherRate{
     padding: 3px 6px;
     border-radius: 10px;
     background-color: green;
@@ -57,4 +56,14 @@
     width: 65px;
     height: auto;
     border-radius: 50%;
+}
+.contact{
+    display: flex;
+    margin-left: auto;
+    padding: 2px 8px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-style:italic;
+    color: white;
+    background-color:chocolate;
 }

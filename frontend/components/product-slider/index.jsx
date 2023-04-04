@@ -19,7 +19,9 @@ function ProductSlider({ productInfo }) {
         <p>{productInfo.item_info}</p>
         <div className={styles.profile}>
           <img src="https://www.fakepersongenerator.com/Face/female/female1021554720306.jpg" alt="" />
-          <a href="" className={styles.publisherUsername}>alexis_metz</a><span>9.8</span>
+          <a href="" className={styles.publisherUsername}>alexis_metz</a>
+          <span className={styles.publisherRate}>9.8</span>
+          <button className={styles.contact}>Contact me</button>
         </div>
       </div>
     </div>
