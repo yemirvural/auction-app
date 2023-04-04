@@ -12,7 +12,7 @@ function SalesSection({ sales }) {
                 <div className={styles.saleCards}>
                     {sales.results.map((sale) => (
                         <div className={styles.saleCard}>
-                            <Link href={'#'}>
+                            <Link href={`/for-sale/${sale.id}`}>
                                 <Image
                                     unoptimized
                                     width={300}
