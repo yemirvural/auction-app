@@ -32,7 +32,7 @@
 }
 .itemPhoto{
     height: 100%;
-    min-width: 15%;
+    width:15%;
 }
 .itemPhoto img{
     object-fit: cover;
@@ -47,12 +47,20 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     padding-top: 25px;
+    width: 85%;
 }
 .itemDetail p{
     height: max-content;
 }
 .saleTitle{
     font-size: 22px;
+}
+.itemPrice{
+    position: absolute;
+    font-size: 24px;
+    font-weight: 600;
+    right: 45px;
+    bottom: 85px;
 }
 .saleTimer{
     font-size: 18px;

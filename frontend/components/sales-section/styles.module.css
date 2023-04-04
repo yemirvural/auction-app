@@ -26,6 +26,7 @@
 .saleCard {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 350px;
     height: 400px;
@@ -34,6 +35,15 @@
     position: relative;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
     transition: transform 0.3s ease;
+}
+.saleCard a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .saleCard img{
     object-fit: cover;
@@ -44,6 +54,7 @@
 }
 .itemInfo{
     display: flex;
+    width: 80%;
     justify-content: space-between;
     gap: 15px;
     padding: 5px 15px;

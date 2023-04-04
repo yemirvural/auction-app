@@ -1,0 +1,32 @@
+{
+  "title" : "Mobile Phones",
+  "results": [
+    {
+      "title": "Iphone 14 Pro Max",
+      "price": 24650,
+      "start_date": "2022-11-09",
+      "end_date": "2022-11-09",
+      "item_info": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak, iPhone 14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir USB-C - Lightning Kablosu bulunuyor.",
+      "image_path": "https://productimages.hepsiburada.net/s/283/550/110000271459506.jpg/format:webp",
+      "bid_count": 8
+    },
+    {
+      "title": "Iphone SE",
+      "price": 12150,
+      "start_date": "2022-11-09",
+      "end_date": "2022-11-09",
+      "item_info": "2030 yılında tamamen karbon nötr olma hedefimize ulaşma çabalarımızın bir parçası olarak iPhone SE, güç adaptörü veya EarPods ile sunulmuyor. Kutuda, USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir USB-C - Lightning kablosu bulunuyor.",
+      "image_path": "https://productimages.hepsiburada.net/s/189/550/110000155170561.jpg/format:webp",
+      "bid_count": 19
+    },
+    {
+      "title": "Iphone 12",
+      "price": 20350,
+      "start_date": "2022-11-09",
+      "end_date": "2022-11-09",
+      "item_info": "iPhone 12, 2030 yılında tamamen karbon nötr olma hedefimize ulaşma çabalarımızın bir parçası olarak, güç adaptörü veya EarPods ile sunulmuyor. Kutunun içinde, USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir USB-C - Lightning Kablosu bulunuyor.",
+      "image_path": "https://productimages.hepsiburada.net/s/76/550/110000018213454.jpg/format:webp",
+      "bid_count": 11
+    }
+  ]
+}
