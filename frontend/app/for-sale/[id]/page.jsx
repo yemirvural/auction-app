@@ -1,12 +1,12 @@
 import React from 'react'
-import Sales from '@/mocks/sales.json'
+import sales from '@/mocks/sales.json'
 import ProductContainer from '@/containers/product'
 
 function ForSalePage({ params }) {
-  console.log(params)
+  const item = sales.results.find(item => item.id === Number(params.id));
   return (
     <div>
-      <ProductContainer />
+      <ProductContainer productInfo={item} />
     </div>
   )
 }
