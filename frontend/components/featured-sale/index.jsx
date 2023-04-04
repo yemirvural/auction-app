@@ -3,20 +3,26 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 import Link from 'next/link'
 
-function FeaturedSale() {
+function FeaturedSale({remainingTime, productInfo}) {
   return (
     <div className={styles.saleWrapper}>
       <div className={styles.saleHeader}>
-        <h3 className={styles.saleTitle}>Iphone 14 Pro Max on Auction!</h3>
-        <span className={styles.saleTimer}>Remain 03:10:15</span>
+        <h3 className={styles.saleTitle}>{productInfo.title} on Auction!</h3>
+        <span className={styles.saleTimer}>
+          {remainingTime.loaded ? 
+            (remainingTime.diff > 0 ? (`${remainingTime.days}:${remainingTime.hours}:${remainingTime.minutes}:${remainingTime.seconds} time left`) : "Auction closed!")
+            :
+            'Loading...'
+          }
+        </span>
       </div>
       <div className={styles.saleBody}>
         <div className={styles.itemPhoto}>
-          <img src={'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841896'}></img>
+          <img src={productInfo.image_path}></img>
         </div>
         <div className={styles.itemDetail}>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quisquam blanditiis, aut ratione facilis sunt perspiciatis corrupti, reprehenderit alias quasi minus nesciunt quos eius delectus asperiores magnam. Eius maiores, cum necessitatibus est dolore, doloremque libero neque reiciendis eveniet accusamus animi deserunt illum aperiam. Numquam et facere unde aperiam laboriosam nulla neque aliquam recusandae quis, atque molestias architecto veniam consequuntur officia culpa hic eius accusantium animi non eligendi tempore vitae nobis enim at! Molestias rerum adipisci error molestiae assumenda tenetur! Obcaecati velit sequi eligendi aliquid iusto harum voluptatum consectetur voluptatibus maxime. Voluptatum itaque ipsum ex pariatur dolores. Dolorum voluptatem veniam totam.</p>
-          <span className={styles.itemPrice}>Last bid: 7850$</span>
+          <p>{productInfo.item_info}</p>
+          <span className={styles.itemPrice}>Last bid: {productInfo.price}$</span>
           <Link href={'#'} className={styles.bidButton}>Bid now!</Link>
         </div>
 

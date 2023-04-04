@@ -4,10 +4,10 @@ import SalesSection from '@/components/sales-section'
 import Sales from '../../mocks/sales.json'
 
 
-function HomeContainer() {
+function HomeContainer({remainingTime, productInfo}) {
   return (
     <div>
-        <FeaturedSale />
+        <FeaturedSale remainingTime={remainingTime} productInfo={productInfo}/>
         <SalesSection sales={Sales}/>
     </div>
   )
