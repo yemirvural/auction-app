@@ -1,9 +1,14 @@
 import React from 'react'
+import Sales from '@/mocks/sales.json'
+import ProductContainer from '@/containers/product'
 
-function page() {
+function ForSalePage({ params }) {
+  console.log(params)
   return (
-    <div>page</div>
+    <div>
+      <ProductContainer />
+    </div>
   )
 }
 
-export default page
+export default ForSalePage

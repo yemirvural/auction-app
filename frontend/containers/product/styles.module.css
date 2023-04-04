@@ -1,0 +1,6 @@
+.productWrapper{
+    margin-top: 25px;
+    display: flex;
+    height: 900px;
+    border: 1px solid red;
+}

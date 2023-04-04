@@ -22,7 +22,7 @@ function SalesSection({ sales }) {
                                 />
                                 <div className={styles.itemInfo}>
                                     <p className={styles.itemName}>{sale.title}</p>
-                                    <span className={styles.itemPrice}>{sale.price}$</span>
+                                    <span className={styles.itemPrice}>Last bid: {sale.price}$</span>
                                 </div>
                             </Link>
                         </div>

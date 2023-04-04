@@ -54,10 +54,10 @@
 }
 .itemInfo{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     gap: 15px;
-    padding: 5px 15px;
+    padding: 5px 25px;
 }
 .itemName{
     font-weight: 500;
