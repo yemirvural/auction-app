@@ -1,0 +1,65 @@
+.saleWrapper{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+}
+.saleHeader{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border: 1px solid grey;
+    padding: 2px;
+    width: 80%;
+}
+.saleBody{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+}
+.bidButton{
+    display: flex;
+    position: absolute;
+    border: 1px solid black;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 25px;
+    right: 45px;
+    bottom: 45px;
+}
+.itemPhoto{
+    height: 100%;
+    min-width: 15%;
+}
+.itemPhoto img{
+    object-fit: cover;
+    height: 100%;
+}
+.itemDetail{
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-top: 25px;
+}
+.itemDetail p{
+    height: max-content;
+}
+.saleTitle{
+    font-size: 22px;
+}
+.saleTimer{
+    font-size: 18px;
+}
+.salePoster{
+    display: flex;
+}
+.salePoster img {
+    object-fit: cover;
+  }
