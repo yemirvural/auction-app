@@ -1,8 +1,11 @@
 import React from 'react'
+import SignUpContainer from '@/containers/register'
 
 function SignUpPage() {
   return (
-    <div>SignUpPage</div>
+    <div>
+      <SignUpContainer />
+    </div>
   )
 }
 

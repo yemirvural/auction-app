@@ -1,18 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
     background-color: #fff;
     font-size: 16px;
     font-family: 'Inter' , sans-serif;
 }
-.container{
+.main-container{
     display: grid;
     grid-template-columns: 1fr minmax(1440px, 94%) 1fr;
     grid-template-rows: 96px auto 72px;
 }
 
-.container > * {
+.main-container > * {
     grid-column: 2;
 }
 
-.container > .fluid {
+.main-container > .fluid {
     grid-column:  1 / -1;
 }

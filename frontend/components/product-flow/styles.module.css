@@ -21,14 +21,15 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 125px;
 }
 .flowBody form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
-    gap: 7px;
+    height: 100%;
+    gap: 8px;
 }
 .flowBody form.closed button{
     background-color: red;

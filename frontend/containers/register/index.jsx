@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './styles.module.css'
-import LoginBox from '@/components/login'
+import SignUpBox from '@/components/register'
 
-function LoginContainer() {
+function SignUpContainer() {
   return (
     <div className={styles.loginWrapper}>
-     <LoginBox />
+     <SignUpBox />
     </div>
   )
 }
 
-export default LoginContainer
+export default SignUpContainer

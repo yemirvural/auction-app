@@ -16,8 +16,8 @@ function Header() {
             <AiOutlineSearch />
           </label>
           <nav className={styles.navigationMenu}>
-            <Link href={'/login'}>Login</Link>
-            <Link href={'/signup'}>SignUp</Link>
+            <Link className='border border-orange-600 text-orange-600 rounded-md hover:bg-orange-500 hover:text-white font-light transition-colors duration-300' href={'/login'}>Login</Link>
+            <Link className='border border-orange-600 text-orange-600 rounded-md hover:bg-orange-500 hover:text-white font-light transition-colors duration-300' href={'/signup'}>SignUp</Link>
           </nav>
         </div>
     </header>
