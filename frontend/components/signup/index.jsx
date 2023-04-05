@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function SignUpBox() {
     return (
@@ -87,12 +88,12 @@ export default function SignUpBox() {
             <p className="mt-8 text-xs font-light text-center text-gray-700">
                 {" "}
                 Have an account?{" "}
-                <a
-                    href="#"
-                    className="font-medium text-purple-600 hover:underline"
+                <Link
+                    href={'/login'}
+                    className="font-medium text-orange-600 hover:underline"
                 >
                     Login
-                </a>
+                </Link>
             </p>
         </div>
     );

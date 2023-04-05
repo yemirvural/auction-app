@@ -1,5 +1,5 @@
 import React from 'react'
-import SignUpContainer from '@/containers/register'
+import SignUpContainer from '@/containers/signup'
 
 function SignUpPage() {
   return (

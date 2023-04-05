@@ -1,0 +1,7 @@
+.loginWrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 80vh;
+}

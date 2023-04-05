@@ -23,7 +23,7 @@ function FeaturedSale({remainingTime, productInfo}) {
         <div className={styles.itemDetail}>
           <p>{productInfo.item_info}</p>
           <span className={styles.itemPrice}>Last bid: {productInfo.price}$</span>
-          <Link href={'#'} className={styles.bidButton}>Bid now!</Link>
+          <Link href={"/for-sale/"+ productInfo.id} className={styles.bidButton}>Bid now!</Link>
         </div>
 
       </div>

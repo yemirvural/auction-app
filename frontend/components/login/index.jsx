@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LoginBox() {
     return (
         <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
@@ -14,7 +16,7 @@ export default function LoginBox() {
                     </label>
                     <input
                         type="email"
-                        className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-orange-400 focus:ring-orange-600 focus:outline-none focus:ring focus:ring-opacity-40"
+                        className="block w-full px-4 py-2 mt-2 text-stone-950 bg-white border rounded-md focus:border-orange-400 focus:ring-orange-600 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                 </div>
                 <div className="mb-2">
@@ -26,15 +28,15 @@ export default function LoginBox() {
                     </label>
                     <input
                         type="password"
-                        className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-orange-400 focus:ring-orange-600 focus:outline-none focus:ring focus:ring-opacity-40"
+                        className="block w-full px-4 py-2 mt-2 text-stone-950 bg-white border rounded-md focus:border-orange-400 focus:ring-orange-600 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                 </div>
-                <a
-                    href="#"
-                    className="text-xs text-purple-600 hover:underline"
+                <Link
+                    href={'/forget-password'}
+                    className="text-xs text-orange-600 hover:underline"
                 >
                     Forget Password?
-                </a>
+                </Link>
                 <div className="mt-6">
                 <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500">
                         Login
@@ -80,12 +82,12 @@ export default function LoginBox() {
             <p className="mt-8 text-xs font-light text-center text-gray-700">
                 {" "}
                 Don't have an account?{" "}
-                <a
-                    href="#"
-                    className="font-medium text-purple-600 hover:underline"
+                <Link
+                    href={'/signup'}
+                    className="font-medium text-orange-600 hover:underline"
                 >
                     Sign up
-                </a>
+                </Link>
             </p>
         </div>
     );
