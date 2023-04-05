@@ -16,8 +16,8 @@ function Header() {
             <AiOutlineSearch />
           </label>
           <nav className={styles.navigationMenu}>
-            <Link href={'#'}>Login</Link>
-            <Link href={'#'}>SignUp</Link>
+            <Link href={'/login'}>Login</Link>
+            <Link href={'/signup'}>SignUp</Link>
           </nav>
         </div>
     </header>
