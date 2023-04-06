@@ -2,12 +2,15 @@
 import React, { useState } from 'react'
 import styles from './styles.module.css'
 import { RiAuctionLine } from 'react-icons/ri';
+import Alert from '../alert';
 
 function ProductFlow({remainingTime}) {
   const [number, setNumber] = useState();
   const [flowMessages, setFlowMessages] = useState([100]);
   const [error, setError] = useState(false);
   const [allBids, setAllBids] = useState(flowMessages.length);
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
 
   
   const handleInputChange = (event) => {
@@ -18,6 +21,7 @@ function ProductFlow({remainingTime}) {
       setError(null);
     }
   };
+
   const handleButtonChange = (e) => {
     e.preventDefault();
     setError(false);
@@ -26,11 +30,22 @@ function ProductFlow({remainingTime}) {
       setFlowMessages((prev) => [...prev, number]);
       setAllBids((prev) => prev + 1);
       setNumber('');
+      displayAlert("Success Operation");
     }
     else{
       setError(true);
+      displayAlert("Operation Failed");
     }
   }
+
+  function displayAlert(message){
+      setAlertMessage(message);
+      setShowAlert(true);
+      setTimeout(() => {
+          setShowAlert(false);
+      }, 2500);
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.flowHeader}>
@@ -42,8 +57,7 @@ function ProductFlow({remainingTime}) {
               <span>{a}$ Online!</span>
           </div>
         )}
-
-
+         {showAlert && <Alert message={alertMessage}/>}
       </div>
       <div className={styles.flowBody}>
         <form className={!(remainingTime.diff > 0) && styles.closed} onSubmit={handleButtonChange} action="">
