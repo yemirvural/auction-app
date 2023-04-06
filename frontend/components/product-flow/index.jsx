@@ -15,15 +15,21 @@ function ProductFlow({remainingTime}) {
     const trimmedValue = value.replace(/\s/g, ""); 
     if (trimmedValue.charAt(0) !== "0"  && !isNaN(trimmedValue) && trimmedValue < 100000000) {
       setNumber(Number(trimmedValue));
+      setError(null);
     }
   };
   const handleButtonChange = (e) => {
     e.preventDefault();
     setError(false);
     const lastBid = flowMessages[flowMessages.length - 1];
-    number > lastBid ? setFlowMessages((prev) => [...prev, number]) : setError(true);
-    setAllBids((prev) => prev + 1)
-    setNumber('');
+    if(number > lastBid){
+      setFlowMessages((prev) => [...prev, number]);
+      setAllBids((prev) => prev + 1);
+      setNumber('');
+    }
+    else{
+      setError(true);
+    }
   }
   return (
     <div className={styles.container}>
@@ -41,7 +47,7 @@ function ProductFlow({remainingTime}) {
       </div>
       <div className={styles.flowBody}>
         <form className={!(remainingTime.diff > 0) && styles.closed} onSubmit={handleButtonChange} action="">
-          <input placeholder={number} type="text" value={number} onChange={handleInputChange}/>
+          <input className={error && "text-red-600"} placeholder={number} type="text" value={number} onChange={handleInputChange}/>
           <button>Bid $<span>{number}</span></button>
           {error && <span className={styles.errorMessage}>Geçersiz Değer</span>}
         </form>
