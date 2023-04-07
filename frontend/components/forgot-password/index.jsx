@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ForgetPasswordBox() {
+export default function ForgotPasswordBox() {
     return (
         <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl lg:max-w-xl">
             <form className="mt-6">

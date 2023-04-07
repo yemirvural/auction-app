@@ -32,10 +32,10 @@ export default function LoginBox() {
                     />
                 </div>
                 <Link
-                    href={'/forget-password'}
+                    href={'/forgot-password'}
                     className="text-xs text-orange-600 hover:underline"
                 >
-                    Forget Password?
+                    Forgot Password?
                 </Link>
                 <div className="mt-6">
                 <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500">
