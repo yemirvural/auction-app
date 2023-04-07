@@ -11,7 +11,6 @@ function ProductFlow({remainingTime}) {
   const [allBids, setAllBids] = useState(flowMessages.length);
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
-
   
   const handleInputChange = (event) => {
     const value = event.target.value;
@@ -40,7 +39,7 @@ function ProductFlow({remainingTime}) {
 
   function displayAlert(message){
       setAlertMessage(message);
-      setShowAlert(true);
+      setShowAlert(!showAlert);
       setTimeout(() => {
           setShowAlert(false);
       }, 2500);
@@ -57,7 +56,7 @@ function ProductFlow({remainingTime}) {
               <span>{a}$ Online!</span>
           </div>
         )}
-         {showAlert && <Alert message={alertMessage}/>}
+         {showAlert && <Alert message={alertMessage} error={error}/>}
       </div>
       <div className={styles.flowBody}>
         <form className={!(remainingTime.diff > 0) && styles.closed} onSubmit={handleButtonChange} action="">
